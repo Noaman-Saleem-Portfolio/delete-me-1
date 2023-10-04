@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:rgb(27,27,27);
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    width:300px;
+    background-color:white;
+    margin:15px;
+    border-radius: 15px;
+    /* padding:10px; */
+}
+
+.image-container{
+    height:270px;
+    background-color:pink;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.car1{
+    background-image:url("images/bmw.jpg")
+}
+
+.car2{
+    background-image:url("images/farari.jpg")
+}
+
+.car3{
+    background-image:url("images/lambo.jpg")
+}
+
+.card img{
+    /* width:100%; */
+    /* margin-bottom: 10px; */
+    /* border-top-right-radius: 15px;
+    border-top-left-radius: 15px; */
+}
+
+.card h2{
+    padding:10px;
+}
+
+.card p {
+    padding:10px;
+    /* margin: 10px 0;
+    margin-bottom: 20px; */
+}
+
+.card a {
+    background-color:rgb(22, 22, 22);
+    display:block;
+    /* width:50%;
+    height:50px; */
+    color:white;
+    padding:10px 0px;
+    width:60%;
+    text-align:center;
+    text-decoration: none;
+    margin:0 auto;
+    margin-bottom:10px;
+}
+
+.card:hover{
+    background-color:rgb(56, 55, 55);
+    color:white;
+    cursor:pointer;
+    transform:scale(1.03);
+    transition: all 1s ease;
+}

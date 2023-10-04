@@ -24,4 +24,33 @@ const bowlers = ["Shaheen","Haris","Naseem"];
 const newTeam2 = [...team,...bowlers];
 // console.log(newTeam2);
 
+//Destructring elements from array
+const vehicles = ['mustang', 'f-150', 'expedition'];
+
+// const [car, truck, suv] = vehicles;
+// const [car,suv] = vehicles;
+
+console.log(truck);
+
+// When destructuring arrays, the order that variables are declared is important.
+
+// If we only want the car and suv we can simply leave out the truck but keep the comma:
+
+const vehicles = ['mustang', 'f-150', 'expedition'];
+
+const [car,, suv] = vehicles;
+
+// Destructuring comes in handy when a function returns an array:
+
+function calculate(a, b) {
+    const add = a + b;
+    const subtract = a - b;
+    const multiply = a * b;
+    const divide = a / b;
+  
+    return [add, subtract, multiply, divide];
+  }
+  
+  const [add, subtract, multiply, divide] = calculate(4, 7);
+
 //Array.of()    .......    Array.from()
